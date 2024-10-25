@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     <header>
+        <div>
+        <img src="https://cdn2.unrealengine.com/s0a-evg-logo-seperate-04-pp-1078x1078-7071cf95a6fc.png?resize=1&w=1920" alt=""></div>
+        <h1> ELIJE HASTA 10 STICKERS</h1>
+     </header>
+
+    <main>
+
+        <div class="sticker1">
+            <img src="https://cdn2.unrealengine.com/s4-right-character-420x420-ee08aa6315c5.png"
+                alt="">
+            <input id="input1" type="number">
+        </div>
+
+        <div class="sticker2">
+            <img src="https://cdn2.unrealengine.com/s2-left-character-420x420-48366fb72347.png"
+                alt="">
+                <input id="input2" type="number">
+            </div>
+        <div class="sticker3">
+            <img src="https://cdn2.unrealengine.com/s5-left-character-420x420-39133f39cba5.png"
+                alt="">
+                <input id="input3" type="number">
+            </div>
+
+    </main>
+
+    <footer> 
+
+        <button onclick="
+        input1 =  Number(document.querySelector('#input1').value) 
+        input2 =  Number(document.querySelector('#input2').value) 
+        input3 =  Number(document.querySelector('#input3').value) 
+        frase = document.querySelector('#frase') 
+        total = document.querySelector('#total')
+        
+        frase.style.visibility = 'visible'
+        suma=  input1 + input2 + input3
+ 
+        
+        if(suma > 10){
+            total.innerHTML= 'DEMASIADOS'
+        }else{
+            total.innerHTML=  suma
+        }
+        "
+        > VERIFICAR</button>
+        <p id="frase"> LLEVAS <span id="total"> </span> STICKERS</p>
+    </footer>
+
+ 
+</body>
+
+</html>

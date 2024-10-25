@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+    <link rel="stylesheet" href="style-1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <p>Click para añadir borde</p>
+
+        <img id="foto"
+            src="https://freight.cargo.site/t/original/i/c159337cf7d088224c0c9203302f505b100623e1a783e5d49b24f15044f78bdc/EUP_001_HERO.JPG"
+            onclick="
+
+            foto = document.querySelector('#foto')
+
+            if(foto.style.border){
+                foto.style.border = 'none'
+            } else{
+                foto.style.border = 'solid 2px red'
+            }
+            ">
+    </main>
+
+
+</body>
+
+</html>

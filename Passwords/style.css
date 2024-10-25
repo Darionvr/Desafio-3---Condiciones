@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background-image: url(https://supermariobroswonder.nintendo.com/_images/home/header/hero-header-layer-1.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+header{
+    padding-top: 4rem;
+}
+header img{
+    width: 6rem;
+}
+
+select{
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    font-family: Mario party hudson;
+    color: rgb(243, 212, 40);
+    -webkit-text-stroke: 3px black;
+    margin: 1rem;
+    border: solid rgb(234, 51, 51) 5px;
+    border-radius: 10px;
+    appearance:none ;
+    text-align: center;
+}
+
+
+
+.texto{
+    background-color: white;
+    padding: 3rem;
+    height: 2rem;
+    border: solid 4px rgb(243, 212, 40);
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+
+
+    
+}
+
+button{
+    padding: 1rem;
+    font-family: Mario party hudson;
+    width: 8rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: solid  rgb(243, 212, 40);
+    color: white;
+    background-color:  rgb(243, 212, 40);
+    position: absolute;
+    z-index: 2;
+    top:-1.5rem;
+    right: 9rem;
+    
+    
+    
+}

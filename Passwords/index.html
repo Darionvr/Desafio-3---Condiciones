@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwords</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/mario-party-hudson" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="https://mario.wiki.gallery/images/thumb/7/7f/Question_Block_-_Nintendo_JP_website.png/200px-Question_Block_-_Nintendo_JP_website.png"
+                alt="">
+    </header>
+    <main>
+
+        <select aria-label="numerouno" id="num1">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+
+        <select aria-label="numerodos" id="num2">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+
+        <select aria-label="numerotres" id="num3">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+
+
+    </main>
+    <footer>
+
+        <div class="texto">
+            <button onclick="
+        resultado = document.querySelector('#resultado')
+        num1 = document.querySelector('#num1').value
+        num2 = document.querySelector('#num2').value
+        num3 = document.querySelector('#num3').value
+
+
+        if(num1 + num2 + num3 == 911){
+            resultado.innerHTML = 'PASSWORD 1 CORRECTO'
+        }else if(num1 + num2 + num3 == 714){
+            resultado.innerHTML = 'PASSWORD 2 CORRECTO'
+        }else{
+            resultado.innerHTML = 'INCORRECTO'
+        }
+       
+        ">VERIFICA</button>
+            <p id="resultado"> ? </p>
+        </div>
+    </footer>
+</body>
+
+</html>
